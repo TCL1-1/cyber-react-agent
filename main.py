@@ -13,7 +13,9 @@ from agent.react_agent import DEFAULT_MAX_STEPS, run_agent  # noqa: E402
 
 
 def parse_args(argv=None):
-    parser = argparse.ArgumentParser(description="CyberSecurity ReAct Agent")
+    parser = argparse.ArgumentParser(
+        description="Cyber React Agent · 基于 ReAct 与 RAG 的网络安全问答智能体"
+    )
     parser.add_argument(
         "--max-steps",
         type=int,

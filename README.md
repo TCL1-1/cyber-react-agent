@@ -1,4 +1,4 @@
-# CyberSecurity ReAct Agent
+# Cyber React Agent
 
 基于 ReAct（Reasoning + Acting）范式、**不依赖 LangChain 等框架从零实现**的网络安全问答智能体。
 支持流式输出、工具调用循环、本地知识库检索（RAG）与来源引用。
