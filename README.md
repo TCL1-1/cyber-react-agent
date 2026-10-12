@@ -61,11 +61,17 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-在项目根目录创建 `.env`：
+配置环境变量——复制模板后填入真实 key：
 
+```powershell
+Copy-Item .env.example .env
 ```
-DEEPSEEK_API_KEY=你的key
+
+```ini
+DEEPSEEK_API_KEY=sk-your-deepseek-api-key-here
 ```
+
+（`.env` 已在 `.gitignore` 中，不会被提交。）
 
 导入知识库（首次运行，或文档更新后重新执行）：
 
@@ -127,3 +133,7 @@ messages[3]: missing field `tool_call_id`
 - 记忆为进程内短期窗口，无持久化与摘要压缩
 - 单 Agent，无任务规划与多智能体协作
 - 未使用原生 function calling
+
+## 许可证
+
+[MIT](LICENSE)
