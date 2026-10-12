@@ -1,0 +1,30 @@
+# ---- 凭据（绝对不要提交）----
+.env
+.env.*
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+
+# ---- 向量库（派生产物，可用 python -m rag.ingest 重建）----
+storage/
+chroma_db/
+
+# ---- 日志与临时文件 ----
+*.log
+tests_run.log
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

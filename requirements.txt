@@ -1,0 +1,16 @@
+openai
+python-dotenv
+
+
+chromadb
+
+# 嵌入模型统一由 chromadb 内置的本地 ONNX 模型提供（all-MiniLM-L6-v2），
+# 因此不再需要 sentence-transformers（它会拉起 torch + huggingface_hub）。
+# 如需换成自定义嵌入模型，改 rag/embedding.py 并在此补回依赖。
+
+
+requests
+beautifulsoup4
+
+
+pypdf
